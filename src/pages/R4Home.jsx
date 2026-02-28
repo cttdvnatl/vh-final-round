@@ -7,7 +7,7 @@ const R4Home = () => {
             <div className='container'>
                 <Link className="link back-to-selection-right" to={"/selection"}>Trở Về Trang Đầu</Link> 
                 <h1 className='heading'>Niên Học 2025-26</h1>
-                <h1 className='sub-heading'>Cấp IV</h1>
+                <h1 className='sub-heading'>Đợt IV</h1>
                 <Link className="start-link link" to="/r4-selection">Bắt Đầu</Link>
             </div>
         </div>

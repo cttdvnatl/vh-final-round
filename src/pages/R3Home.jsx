@@ -7,7 +7,7 @@ const R2Home = () => {
             <div className='container'>
                 <Link className="link back-to-selection-right" to={"/selection"}>Trở Về Trang Đầu</Link> 
                 <h1 className='heading'>Niên Học 2025-26</h1>
-                <h1 className='sub-heading'>Cấp III</h1>
+                <h1 className='sub-heading'>Đợt III</h1>
                 <Link className="start-link link" to="/r3-selection">Bắt Đầu</Link>
             </div>
         </div>
