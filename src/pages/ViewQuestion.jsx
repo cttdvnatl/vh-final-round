@@ -1,3 +1,4 @@
+//this file relies on not updating state of React app after the question is loaded 
 import axios from 'axios';
 import React, {useMemo, useState, useEffect, useRef} from 'react';
 import party from 'party-js';
@@ -179,6 +180,31 @@ const ViewQuestion = () => {
     else if (choice4.trim() === "Cả hai câu đều đúng." || choice4.trim() === "Không có câu đúng" || choice4.trim() === "Không có câu trả lời đúng" || choice4.trim() === "Cả hai câu a và b đều đúng.") {
         arr = SetChoiceAtBottom(arr, otherChoice3);
     }
+
+    let is3Choices = false;
+
+    //For questions with a blank answer choice,
+    //the blank answer choice will be at the bottom and then removed
+    if (choice1.trim() === "") {
+        arr = SetChoiceAtBottom(arr, correctChoice);
+        is3Choices = true;
+        arr.pop();
+    }
+    else if (choice2.trim() === "") {
+        arr = SetChoiceAtBottom(arr, otherChoice1);
+        is3Choices = true;
+        arr.pop();
+    }
+    else if (choice3.trim() === "") {
+        arr = SetChoiceAtBottom(arr, otherChoice2);
+        is3Choices = true;
+        arr.pop();
+    }
+    else if (choice4.trim() === "") {
+        arr = SetChoiceAtBottom(arr, otherChoice3);
+        is3Choices = true;
+        arr.pop();
+    }
     
     const displayA = arr[0];
     const displayB = arr[1];
@@ -259,7 +285,7 @@ const ViewQuestion = () => {
                 <div className='choice-container'>
                     <TbLetterC className={'letter-icon ' + letterIcon}/>{displayC}
                 </div>
-                <div className='choice-container'>
+                <div className={'choice-container'} style={is3Choices ? {display: 'none'} : {display: 'block'}} >
                     <TbLetterD className={'letter-icon ' + letterIcon}/>{displayD}
                 </div>
             </div>
