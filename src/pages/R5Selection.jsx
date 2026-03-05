@@ -2,13 +2,13 @@ import React, {useRef, useEffect} from 'react';
 import usedQuestions from '../database/used-questions.json';
 import {Link} from 'react-router-dom';
 
-const R1Selection = () => {
+const R5Selection = () => {
     const heading = useRef();
     const categoryElement = useRef();
 
     useEffect(() => {
         //remove used questions
-        let data = usedQuestions.r4;
+        let data = usedQuestions.r5;
         
         for (let i = 0;i<data.length;i++) {
             for (let a = 0;a<data[i].length;a++) {
@@ -19,7 +19,7 @@ const R1Selection = () => {
 
     //adds used questions
     function newUsedQuestion(category, points) {
-        usedQuestions.r4[category-1].push(points-1);
+        usedQuestions.r5[category-1].push(points-1);
     }
 
     return (
@@ -27,7 +27,7 @@ const R1Selection = () => {
         <div className="selection">
             <div className="container category">
                 <Link className="link back-to-selection-right" to={"/r4-home/"}>Trở Về Trang Đầu</Link> 
-                <h1 ref={heading} className='heading background-lightblue'>Đợt IV</h1>
+                <h1 ref={heading} className='heading background-lightblue'>Đợt V</h1>
                 <div className='selection-container-category-points'>
                     <div ref={categoryElement} className="category">
                         <div className='question-container'>
@@ -52,4 +52,4 @@ const R1Selection = () => {
     )
 }
 
-export default R1Selection;
+export default R5Selection;

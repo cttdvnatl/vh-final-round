@@ -16,6 +16,8 @@ import R3Selection from './pages/R3Selection';
 import R4Selection from './pages/R4Selection';
 import ViewQuestion from './pages/ViewQuestion';
 import ViewOERAnswer from './pages/ViewOERAnswer';
+import R5Selection from './pages/R5Selection';
+import R5Home from './pages/R5Home';
 
 function App() {
   const page = useRef(null);
@@ -44,10 +46,12 @@ function App() {
         <Route path="/r2-home" element={<R2Home/>} exact/>
         <Route path="/r3-home" element={<R3Home/>} exact/>
         <Route path="/r4-home" element={<R4Home/>} exact/>
+        <Route path="/r5-home" element={<R5Home/>} exact/>
         <Route path="/r1-selection" element={<R1Selection/>} exact/>
         <Route path="/r2-selection" element={<R2Selection/>} exact/>
         <Route path="/r3-selection" element={<R3Selection/>} exact/>
         <Route path="/r4-selection" element={<R4Selection/>} exact/>
+        <Route path="/r5-selection" element={<R5Selection/>} exact/>
       </Routes>
     </Router>
     {/*remove overflow hidden to add scrollbar and access full screen button*/}

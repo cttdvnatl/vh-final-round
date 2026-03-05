@@ -43,7 +43,6 @@ const R1Selection = () => {
                             <Link onClick={() => newUsedQuestion(1,10)} to={"/view-question/1/1/10/15"} className="select border-red">10</Link>
                             <Link onClick={() => newUsedQuestion(1,11)} to={"/view-question/1/2/1/15"} className="select select-bottom border-lightblue">Câu Dự Bị I</Link>
                             <Link onClick={() => newUsedQuestion(1,12)} to={"/view-question/1/2/2/15"} className="select select-bottom border-lightblue">Câu Dự Bị II</Link>
-                            <Link onClick={() => newUsedQuestion(1,13)} to={"/view-question/1/2/3/15"} className="select select-bottom border-lightblue">Câu Dự Bị III</Link>
                         </div>
                     </div>
                 </div>

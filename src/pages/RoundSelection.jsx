@@ -10,6 +10,7 @@ const RoundSelection = () => {
                     <Link className="link" to="/r2-home">Đợt II</Link>
                     <Link className="link" to="/r3-home">Đợt III</Link>
                     <Link className="link" to="/r4-home">Đợt IV</Link>
+                    <Link className="link" to="/r5-home">Đợt V</Link>
                 </div>
             </div>
         </div>
