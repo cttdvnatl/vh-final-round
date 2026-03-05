@@ -26,23 +26,23 @@ const R5Selection = () => {
         <>
         <div className="selection">
             <div className="container category">
-                <Link className="link back-to-selection-right" to={"/r4-home/"}>Trở Về Trang Đầu</Link> 
+                <Link className="link back-to-selection-right" to={"/r5-home/"}>Trở Về Trang Đầu</Link> 
                 <h1 ref={heading} className='heading background-lightblue'>Đợt V</h1>
                 <div className='selection-container-category-points'>
                     <div ref={categoryElement} className="category">
                         <div className='question-container'>
-                            <Link onClick={() => newUsedQuestion(1,1)} to={"/view-question/4/1/1/15"} className="select border-red">1</Link>
-                            <Link onClick={() => newUsedQuestion(1,2)} to={"/view-question/4/1/2/15"} className="select border-red">2</Link>
-                            <Link onClick={() => newUsedQuestion(1,3)} to={"/view-question/4/1/3/15"} className="select border-red">3</Link>
-                            <Link onClick={() => newUsedQuestion(1,4)} to={"/view-question/4/1/4/15"} className="select border-red">4</Link>
-                            <Link onClick={() => newUsedQuestion(1,5)} to={"/view-question/4/1/5/15"} className="select border-red">5</Link>
-                            <Link onClick={() => newUsedQuestion(1,6)} to={"/view-question/4/1/6/15"} className="select border-red">6</Link>
-                            <Link onClick={() => newUsedQuestion(1,7)} to={"/view-question/4/1/7/15"} className="select border-red">7</Link>
-                            <Link onClick={() => newUsedQuestion(1,8)} to={"/view-question/4/1/8/15"} className="select border-red">8</Link>
-                            <Link onClick={() => newUsedQuestion(1,9)} to={"/view-question/4/1/9/15"} className="select border-red">9</Link>
-                            <Link onClick={() => newUsedQuestion(1,10)} to={"/view-question/4/1/10/15"} className="select border-red">10</Link>
-                            <Link onClick={() => newUsedQuestion(1,11)} to={"/view-question/4/2/1/15"} className="select select-bottom border-lightblue">Câu Dự Bị I</Link>
-                            <Link onClick={() => newUsedQuestion(1,12)} to={"/view-question/4/2/2/15"} className="select select-bottom border-lightblue">Câu Dự Bị II</Link>
+                            <Link onClick={() => newUsedQuestion(1,1)} to={"/view-question/5/1/1/15"} className="select border-red">1</Link>
+                            <Link onClick={() => newUsedQuestion(1,2)} to={"/view-question/5/1/2/15"} className="select border-red">2</Link>
+                            <Link onClick={() => newUsedQuestion(1,3)} to={"/view-question/5/1/3/15"} className="select border-red">3</Link>
+                            <Link onClick={() => newUsedQuestion(1,4)} to={"/view-question/5/1/4/15"} className="select border-red">4</Link>
+                            <Link onClick={() => newUsedQuestion(1,5)} to={"/view-question/5/1/5/15"} className="select border-red">5</Link>
+                            <Link onClick={() => newUsedQuestion(1,6)} to={"/view-question/5/1/6/15"} className="select border-red">6</Link>
+                            <Link onClick={() => newUsedQuestion(1,7)} to={"/view-question/5/1/7/15"} className="select border-red">7</Link>
+                            <Link onClick={() => newUsedQuestion(1,8)} to={"/view-question/5/1/8/15"} className="select border-red">8</Link>
+                            <Link onClick={() => newUsedQuestion(1,9)} to={"/view-question/5/1/9/15"} className="select border-red">9</Link>
+                            <Link onClick={() => newUsedQuestion(1,10)} to={"/view-question/5/1/10/15"} className="select border-red">10</Link>
+                            <Link onClick={() => newUsedQuestion(1,11)} to={"/view-question/5/2/1/15"} className="select select-bottom border-lightblue">Câu Dự Bị I</Link>
+                            <Link onClick={() => newUsedQuestion(1,12)} to={"/view-question/5/2/2/15"} className="select select-bottom border-lightblue">Câu Dự Bị II</Link>
                         </div>
                     </div>
                 </div>
