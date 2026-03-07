@@ -295,7 +295,7 @@ const ViewQuestion = () => {
                 <Timer seconds={seconds}/>
             </div>
             <h1 ref={questionElement} className='question-heading'>{parseNewLine(question)}</h1>
-                <div className='question-image-container-oer'>
+                <div className='question-image-container'>
                     {
                         images.map((image, idx) => (
                             <>
