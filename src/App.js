@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Routes, BrowserRouter as Router, Route} 
+import {Routes, HashRouter as Router, Route} 
 from 'react-router-dom';
 
 import './style/style.css'
