@@ -37,7 +37,7 @@
     font-size: 40px;
 }
 
-.question-image-container-oer {
+.question-image-container {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -45,33 +45,9 @@
     padding-top: 20px;
 }
 
-.question-image-container-oer .question-image {
+.question-image-container .question-image {
     height: 250px;
     margin: 0 15px 0 15px;
-}
-
-.question-image-container-mc {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: row;
-    padding-top: 150px;
-}
-
-.question-image-container-mc .question-image {
-    height: 250px;
-    margin: 0 15px 0 15px;
-}
-
-.question-image-container-mc-right {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: row;
-    padding-top: 150px;
 }
 
 .oer-answer {

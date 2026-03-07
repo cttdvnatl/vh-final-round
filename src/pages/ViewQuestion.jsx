@@ -256,20 +256,11 @@ const ViewQuestion = () => {
                     <Timer seconds={seconds}/>
                 </div>
                 <h1 ref={questionElement} className='question-heading'>{parseNewLine(question)} <b style={{color: 'yellow'}} className='question-heading'>{/*(10 Điểm)*/}</b></h1>
-                <div className='question-image-container-mc'>
+                <div className='question-image-container'>
                     {
                         images.map((image, idx) => (
                             <>
-                            <img alt={image} className='question-image' src={image} key={idx}/>
-                            </>
-                        ))
-                    }
-                </div>
-                <div className='question-image-container-mc question-image-container-mc-right'>
-                    {
-                        images.map((image, idx) => (
-                            <>
-                            <img alt={image} className='question-image' src={image} key={idx}/>
+                            <img alt={image} style={images.length === 5 ? {height: '150px'} : {}} className='question-image' src={image} key={idx}/>
                             </>
                         ))
                     }
