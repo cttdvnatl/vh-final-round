@@ -62,6 +62,10 @@
     height: 45%;
 }
 
+.question .question-row-no-img {
+    height: 26%;
+}
+
 .question .choices {
     display: inline-block;
     width: 60%;

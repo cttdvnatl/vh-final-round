@@ -246,7 +246,7 @@ const ViewQuestion = () => {
 
     const multipleChoice = (
             <>
-            <div style={{display: multipleChoiceDisplayStyle}} className='question-row'>
+            <div style={{display: multipleChoiceDisplayStyle}} className={images.length === 0  ? 'question-row-no-img' : 'question-row'}>
                 <div hidden>
                     <h5>Category {category}</h5>
                     <h5>Subcategory {subcategory}</h5>
@@ -276,7 +276,7 @@ const ViewQuestion = () => {
                 <div className='choice-container'>
                     <TbLetterC className={'letter-icon ' + letterIcon}/>{displayC}
                 </div>
-                <div className={'choice-container'} style={is3Choices ? {display: 'none'} : {display: 'block'}} >
+                <div className={'choice-container'} >
                     <TbLetterD className={'letter-icon ' + letterIcon}/>{displayD}
                 </div>
             </div>
@@ -295,15 +295,15 @@ const ViewQuestion = () => {
                 <Timer seconds={seconds}/>
             </div>
             <h1 ref={questionElement} className='question-heading'>{parseNewLine(question)}</h1>
-                <div className='question-image-container'>
-                    {
-                        images.map((image, idx) => (
-                            <>
-                            <img alt={image} className='question-image' src={image} key={idx}/>
-                            </>
-                        ))
-                    }
-                </div>
+            <div className='question-image-container' style={images.length === 0 ? {display: "none"} : {display: "block"}}>
+                {
+                    images.map((image, idx) => (
+                        <>
+                        <img alt={image} className='question-image' src={image} key={idx}/>
+                        </>
+                    ))
+                }
+            </div>
             <Link to={"/view-oer-question/" + category + "/" + subcategory + "/" + points} style={{display: openEndedAnswerButtonDisplayStyle,color: 'green', cursor: 'pointer', border: '1px solid green', padding: '5px', marginTop: "15vh"}} className='question-heading'>Câu Trả Lời Đúng</Link>
         </div>
         </>
