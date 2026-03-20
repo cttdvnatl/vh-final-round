@@ -21,7 +21,7 @@
 }
 
 .question-heading {
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 550;
     text-align: center;
     padding-top: 1vh;
@@ -31,10 +31,9 @@
     width: 70%;
 }
 
-
 .question-heading strong {
     font-weight: 900;
-    font-size: 40px;
+    font-size: inherit;
 }
 
 .question-image-container {
@@ -43,6 +42,7 @@
     margin: auto;
     flex-direction: row;
     padding-top: 20px;
+    width:100%;
 }
 
 .question-image-container .question-image {
@@ -106,7 +106,7 @@
 .question .choices .choice-container div p.question-text {
     display: inline-block;
     width: 70%;
-    font-size: 35px;
+    font-size: 44px;
     user-select: none;
     margin-top: 1vh;
     cursor: pointer;

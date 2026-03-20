@@ -295,7 +295,7 @@ const ViewQuestion = () => {
                 <Timer seconds={seconds}/>
             </div>
             <h1 ref={questionElement} className='question-heading'>{parseNewLine(question)}</h1>
-            <div className='question-image-container' style={images.length === 0 ? {display: "none"} : {display: "block"}}>
+            <div className='question-image-container'>
                 {
                     images.map((image, idx) => (
                         <>
@@ -313,11 +313,11 @@ const ViewQuestion = () => {
         <>
         <div className='view-question'> 
             <div id="container" className='container'>
+                <Link className="link back-to-selection" to={"/r" + category + "-selection/"}>Trở Về Trang Đầu</Link> 
                 <div ref={questionContainer} style={questionElementStyle} className='question'>
                     {multipleChoice}
                     {openEnded}
                 </div>
-                <Link className="link back-to-selection" to={"/r" + category + "-selection/"}>Trở Về Trang Đầu</Link> 
             </div>
         </div>
         </>

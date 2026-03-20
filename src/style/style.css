@@ -89,17 +89,24 @@ body {
 
 .link.back-to-selection {
     display: block;
+    position: absolute;
+    margin-top:450px;
     float: left;
-    font-size: 23px;
+    font-size: 30px;
+    border-width: 5px;
+    padding: 15px;
+    margin-left: 100px;
 }
 
-.link.back-to-selection-right {
+.link.back-to-selection {
+    display: block;
     position: absolute;
-    margin-right: 5%;
-    margin-top: 10%;
-    font-size: 23px;
-    right: 0;
-    top: 0;
+    margin-top:450px;
+    float: left;
+    font-size: 40px;
+    border-width: 5px;
+    padding: 15px;
+    margin-left: 100px;
 }
 
 .link.admin {

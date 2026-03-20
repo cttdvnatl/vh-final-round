@@ -5,7 +5,7 @@ const R5Home = () => {
     return (
         <div className='home'>
             <div className='container'>
-                <Link className="link back-to-selection-right" to={"/selection"}>Trở Về Trang Đầu</Link> 
+                <Link className="link back-to-selection" to={"/selection"}>Trở Về Trang Đầu</Link> 
                 <h1 className='heading'>Niên Học 2025-26</h1>
                 <h1 className='sub-heading'>Đợt V</h1>
                 <Link className="start-link link" to="/r5-selection">Bắt Đầu</Link>

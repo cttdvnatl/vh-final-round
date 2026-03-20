@@ -26,7 +26,7 @@ const R5Selection = () => {
         <>
         <div className="selection">
             <div className="container category">
-                <Link className="link back-to-selection-right" to={"/r5-home/"}>Trở Về Trang Đầu</Link> 
+                <Link className="link back-to-selection" to={"/r5-home/"}>Trở Về Trang Đầu</Link> 
                 <h1 ref={heading} className='heading background-lightblue'>Đợt V</h1>
                 <div className='selection-container-category-points'>
                     <div ref={categoryElement} className="category">
