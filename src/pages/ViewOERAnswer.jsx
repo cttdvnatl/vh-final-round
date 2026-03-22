@@ -63,7 +63,7 @@ const ViewOERAnswer = () => {
                 <h5>Category {category}</h5>
                 <h5>{points} Points</h5>
             </div>
-            <h1 style={{display: "block"}} className='question-heading oer-answer'>{newLine(oerAnswer)}</h1>
+            <h1 style={{display: "block"}} className='question-heading oer-answer'><span>{newLine(oerAnswer)}</span></h1>
         </div>
         </>
     )
@@ -72,10 +72,10 @@ const ViewOERAnswer = () => {
         <>
         <div className='view-question'> 
             <div id="container" className='container'>
+                <Link className="link back-to-selection" to={"/r" + category + "-selection/"}>Trở Về Trang Đầu</Link> 
                 <div ref={questionContainer} style={questionElementStyle} className='question'>
                     {openEnded}
                 </div>
-                <Link className="link back-to-selection" to={"/r" + category + "-selection/"}>Trở Về Trang Đầu</Link> 
             </div>
         </div>
         </>
